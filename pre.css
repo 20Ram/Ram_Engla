@@ -1,0 +1,190 @@
+ /* General Body Styling */
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   color: #333;
+ }
+
+ .container {
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+ }
+
+ /* Header Styling */
+ header {
+   background-color: #333;
+   color: white;
+   padding: 10px 0;
+   text-align: center;
+ }
+
+ /* Section Styling */
+ section {
+   margin-top: 20px;
+ }
+
+ h2,
+ h3 {
+   color: #333;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+ }
+
+ h3 {
+   color: #555;
+   font-size: 1.2rem;
+ }
+
+ /* Button Styling */
+ button {
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   /* Primary green */
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   margin-bottom: 20px;
+   border-radius: 4px;
+ }
+
+ button:hover {
+   background-color: #45a049;
+   /* Darker green */
+ }
+
+ /* Table Styling */
+ table {
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: collapse;
+ }
+
+ table,
+ th,
+ td {
+   border: 1px solid #ddd;
+ }
+
+ th,
+ td {
+   padding: 8px;
+   text-align: left;
+ }
+
+ th {
+   background-color: #f2f2f2;
+ }
+
+ /* Flagged Posts List */
+ ul {
+   list-style-type: none;
+   padding: 0;
+ }
+
+ ul li {
+   background: #fff;
+   padding: 10px;
+   margin-bottom: 10px;
+   border-radius: 4px;
+   border: 1px solid #ddd;
+ }
+
+ /* Modal Window Styling */
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .modal-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   padding: 20px;
+   border-radius: 5px;
+   width: 300px;
+ }
+
+ #close-modal {
+   color: #aaa;
+   font-size: 28px;
+   font-weight: bold;
+   float: right;
+ }
+
+ #close-modal:hover {
+   color: black;
+   cursor: pointer;
+ }
+
+ /* Input and Button Styling in Modal */
+ input {
+   width: 100%;
+   padding: 8px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+
+ button#submit-new-user {
+   width: 100%;
+   padding: 10px;
+   background-color: #4CAF50;
+   /* Primary green */
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+ }
+
+ button#submit-new-user:hover {
+   background-color: #45a049;
+ }
+
+ /* Chart Container */
+ #charts-container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+ canvas {
+   width: 100%;
+   max-width: 600px;
+   height: 300px;
+   background-color: #fff;
+   /* White background for charts */
+ }
+
+ /* Chart.js - Adjust colors to match theme */
+ .chart-bar,
+ .chart-line {
+   background-color: rgba(75, 192, 192, 0.2);
+   border-color: rgba(75, 192, 192, 1);
+ }
+
+ .chart-bar-red {
+   background-color: rgba(255, 99, 132, 0.2);
+   border-color: rgba(255, 99, 132, 1);
+ }
+
+ .chart-bar-blue {
+   background-color: rgba(54, 162, 235, 0.2);
+   border-color: rgba(54, 162, 235, 1);
+ }
+
+ .chart-line-purple {
+   background-color: rgba(153, 102, 255, 0.2);
+   border-color: rgba(153, 102, 255, 1);
+ }

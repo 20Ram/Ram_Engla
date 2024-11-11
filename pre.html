@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="pre.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+    <!-- User Management Section -->
+    <section id="user-management">
+      <h2>User Management</h2>
+      <button id="add-user-btn">Add User</button>
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Role</th>
+            <th>Activity</th>
+            <th>Referrals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- User data will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Content Moderation Section -->
+    <section id="content-moderation">
+      <h2>Content Moderation</h2>
+      <ul id="flagged-posts">
+        <!-- Flagged posts will be inserted here -->
+      </ul>
+      <h3>Post Engagement Metrics</h3>
+      <canvas id="engagement-chart"></canvas>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics">
+      <h2>Analytics</h2>
+      <p>Total Active Users: <span id="active-users">0</span></p>
+      <p>Total Posts: <span id="total-posts">0</span></p>
+
+      <div id="charts-container">
+        <canvas id="user-activity-chart"></canvas>
+        <canvas id="content-performance-chart"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <!-- Add User Modal -->
+  <div id="add-user-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <h2>Add New User</h2>
+      <input type="text" id="new-user-name" placeholder="Name" required>
+      <input type="email" id="new-user-email" placeholder="Email" required>
+      <button id="submit-new-user">Add User</button>
+    </div>
+  </div>
+
+  <script src="pre.js"></script>
+</body>
+
+</html>
